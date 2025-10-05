@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn about Suaibou Adamu, a skilled civil/structural engineer with over 5 years of experience in UK infrastructure projects."
+    />
+    <meta
+      name="keywords"
+      content="civil engineer, structural engineer, infrastructure, design, UK, ICE, IStructE"
+    />
+    <meta name="author" content="Suaibou Adamu" />
+    <title>Suaibou Adamu | About Me</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav aria-label="Main Navigation">
+      <h2 id="logo"><a href="index.html">Suaibou Adamu</a></h2>
+      <ul class="navigation-items" role="menubar">
+        <li class="navigation-item" role="menuitem">
+          <a href="index.html">About Me</a>
+        </li>
+        <li class="navigation-item" role="menuitem">
+          <a href="resume.html">Resume</a>
+        </li>
+        <li class="navigation-item" role="menuitem">
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+      <button id="theme-toggle" aria-label="Toggle Theme">Toggle Theme</button>
+    </nav>
+
+    <main>
+      <section id="about-me">
+        <div class="about-me-overlay">
+          <canvas id="avatar-canvas"></canvas>
+          <div id="typewriter-container" aria-live="polite"></div>
+        </div>
+      </section>
+      <section id="projects" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Key Projects</h2>
+        <div class="projects-container">
+          <details class="project" data-independent>
+            <summary class="project-title">
+              <h3>Stabilization of Sulfate-Rich Expansive Soils</h3>
+            </summary>
+            <div class="project-content">
+              <p class="project-description">
+                Developed a kaolin-based geopolymer solution for stabilizing
+                sulfate-rich soils, increasing load-bearing capacity by 30% for
+                a £15M UK highway project. Conducted CBR, consolidation, and UCS
+                tests, reducing maintenance costs by 15%.
+              </p>
+              <button class="project-expand">Expand Details</button>
+            </div>
+          </details>
+          <details class="project" data-independent>
+            <summary class="project-title">
+              <h3>COD Removal from Sanitary Landfill Leachate</h3>
+            </summary>
+            <div class="project-content">
+              <p class="project-description">
+                Engineered a treatment process using hydrogen peroxide and
+                persulphate, achieving 83.5% COD removal for a 500,000L/day
+                leachate facility, cutting operational costs by 20% compared to
+                traditional methods.
+              </p>
+              <button class="project-expand">Expand Details</button>
+            </div>
+          </details>
+          <!-- <details class="project" data-independent>
+            <summary class="project-title">
+              <h3>Railway Bridge Retrofit</h3>
+            </summary>
+            <div class="project-content">
+              <p class="project-description">
+                Led a £8M retrofit of a Victorian railway bridge, extending its
+                lifespan by 50 years using advanced composite materials,
+                completed 10% under budget.
+              </p>
+              <button class="project-expand">Expand Details</button>
+            </div>
+          </details> -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Made with <span class="heart">♥</span> in London | Last Updated:
+        <span id="timestamp">02:31 PM EAT, October 05, 2025</span>
+      </p>
+      <div id="canvas-container"></div>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
